@@ -18,7 +18,7 @@ import { AuthGuard } from './auth/auth.guard';
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       entities: [User],
-      // synchronize: true,
+      synchronize: true,
       logging: true
     }),
     UserModule,
